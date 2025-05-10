@@ -1,0 +1,133 @@
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #18bc9c;
+    --light-bg: #ffffff;
+    --dark-bg: #1e1e1e;
+    --light-text: #2c3e50;
+    --dark-text: #ecf0f1;
+  }
+  
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: var(--light-bg);
+    color: var(--light-text);
+    transition: all 0.3s ease;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5 rem;
+  }
+
+  
+  .dark-mode {
+    background-color: var(--dark-bg);
+    color: var(--dark-text);
+  }
+  
+  header {
+    padding: 2rem;
+    background: var(--primary-color);
+    color: #fff;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  header p {
+    margin: 0.5rem 0 1rem;
+  }
+  
+  .cta-button {
+    background-color: var(--secondary-color);
+    color: #fff;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  section {
+    padding: 3rem 1rem;
+    max-width: 1200px;
+    margin: auto;
+    font-size: 2.5 rem;
+  }
+  
+  section h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2 rem;
+  }
+  
+  .steps,
+  .tiles,
+  .testimonials {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .step,
+  .tile,
+  .testimonial {
+    flex: 1 1 250px;
+    background-color: #f4f4f4;
+    padding: 1rem;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .step:hover,
+  .tile:hover,
+  .testimonial:hover {
+    transform: translateY(-5px);
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 500px;
+    margin: auto;
+  }
+  
+  input, textarea, select {
+    padding: 0.8rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  button[type="submit"] {
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .toggle-theme {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+    border-radius: 20px;
+  }
+  
+  @media (max-width: 768px) {
+    .steps, .tiles, .testimonials {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
